@@ -36,7 +36,7 @@
         <mysql-driver.version>5.1.36</mysql-driver.version>
 
         <!-- Web dependencies -->
-        <dandelion.version>1.1.1</dandelion.version>
+        <dandelion.version>1.1.2-SNAPSHOT</dandelion.version>
         <dandelion.datatables.version>1.1.0</dandelion.datatables.version>
 
         <cobertura.version>2.7</cobertura.version>
@@ -360,6 +360,16 @@
                     <port>9966</port>
                     <path>/petclinic</path>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>9.4.0.M0</version>
+            </plugin>
+            <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>appengine-maven-plugin</artifactId>
+                <version>0.1.1-beta</version>
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
